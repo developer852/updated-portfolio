@@ -1,0 +1,38 @@
+# ==============================================================================
+# Git Ignore Configuration - Code Only (Images & Media Excluded)
+# ==============================================================================
+
+# Images, Media & Binary Assets
+images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.mp3
+*.wav
+*.pdf
+
+# Environment variables & secrets (CRITICAL: NEVER COMMIT API KEYS)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Node dependencies & package locks
+node_modules/
+package-lock.json
+
+# Test scripts, automation runners, & temporary utilities
+test_*.js
+verify_*.js
+find_overflow.js
+test_*.mjs
+*.log
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

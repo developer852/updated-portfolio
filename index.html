@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devika Mane | Java Backend Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Devika Mane — Java Backend Developer specializing in Spring Boot, REST APIs, Hibernate, MySQL, and scalable systems." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="cyan" class="is-loading">
+
+  <!-- =========================================================================
+       PRELOADER / FUTURISTIC SYSTEM BOOT SEQUENCE
+       ========================================================================= -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-curtain curtain-top"></div>
+    <div class="preloader-curtain curtain-bottom"></div>
+    <div class="preloader-grid-bg"></div>
+
+    <div class="preloader-content">
+      <!-- High-Tech Central Reactor Rings -->
+      <div class="preloader-reactor">
+        <div class="reactor-ring ring-outer"></div>
+        <div class="reactor-ring ring-mid"></div>
+        <div class="reactor-ring ring-inner"></div>
+        <div class="reactor-core">
+          <i class="fa-brands fa-java core-icon"></i>
+        </div>
+      </div>
+
+      <!-- Kinetic Split Name: DEVIKA MANE • PORTFOLIO -->
+      <div class="preloader-title-wrap">
+        <div class="preloader-name-row" id="preloader-name-row" aria-label="DEVIKA MANE"></div>
+        <div class="preloader-portfolio-row" id="preloader-portfolio-row" aria-label="PORTFOLIO"></div>
+        <div class="preloader-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">JAVA BACKEND DEVELOPER &bull; SPRING BOOT &bull; 2026</span>
+        </div>
+      </div>
+
+      <!-- Live Boot Step Telemetry -->
+      <div class="preloader-console">
+        <div class="console-prefix">&gt;</div>
+        <div class="console-text" id="preloader-boot-text">Initializing JVM 21 & Spring Boot Kernel...</div>
+      </div>
+
+      <!-- Progress Track & Percentage -->
+      <div class="preloader-progress-wrap">
+        <div class="preloader-bar-track">
+          <div class="preloader-bar-fill" id="preloader-fill"></div>
+        </div>
+        <div class="preloader-percent-row">
+          <span class="preloader-status-tag"><i class="fa-solid fa-circle-nodes"></i> SYSTEM BOOT</span>
+          <span class="preloader-percent" id="preloader-percent">0%</span>
+        </div>
+      </div>
+
+      <div class="preloader-skip" id="preloader-skip">
+        <span>Click or press any key to enter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Cursor Spotlight -->
+  <div id="cursor-spotlight"></div>
+
+  <!-- Audio Click Synth (Web Audio API driven) -->
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text">devika<span class="accent-dot">.java</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#bento" class="nav-item"><i class="fa-solid fa-shapes"></i> Overview</a>
+        <a href="#projects" class="nav-item"><i class="fa-solid fa-folder-tree"></i> Projects</a>
+        <a href="#skills" class="nav-item"><i class="fa-solid fa-layer-group"></i> Tech Stack</a>
+        <a href="#experience" class="nav-item"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-ai-btn" id="nav-ai-btn" title="Ask Devika AI Copilot">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Ask AI</span>
+        </button>
+        <button class="cmd-btn" id="open-cmd-btn" title="Command Palette (Ctrl + K)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="cmd-badge">⌘K</span>
+        </button>
+        <a href="https://github.com/developer852" target="_blank" rel="noopener" class="icon-btn nav-social-btn" title="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/devikamane" target="_blank" rel="noopener" class="icon-btn nav-social-btn" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-talk-btn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-item"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#bento" class="mobile-nav-item"><i class="fa-solid fa-shapes"></i> Overview</a>
+      <a href="#projects" class="mobile-nav-item"><i class="fa-solid fa-folder-tree"></i> Projects</a>
+      <a href="#skills" class="mobile-nav-item"><i class="fa-solid fa-layer-group"></i> Tech Stack</a>
+      <a href="#experience" class="mobile-nav-item"><i class="fa-solid fa-briefcase"></i> Experience</a>
+      <a href="#contact" class="mobile-nav-item"><i class="fa-solid fa-envelope"></i> Contact</a>
+      <button class="mobile-nav-item ai-mobile-item" id="mobile-ai-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Ask Devika AI</button>
+      <a href="#contact" class="btn btn-primary btn-block mobile-talk-btn"><i class="fa-regular fa-paper-plane"></i> Let's Talk</a>
+    </div>
+    <div class="mobile-socials">
+      <a href="https://github.com/developer852" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/devikamane" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          
+          <!-- Status Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Java Backend Roles · Pune / Remote</span>
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Devika Mane</span>
+            <br>
+            <span class="typed-wrapper">
+              <span id="typed-role">Java Backend Developer</span>
+              <span class="cursor-blink">|</span>
+            </span>
+          </h1>
+
+          <!-- Hero Description -->
+          <p class="hero-subtitle">
+            Computer Science Graduate specializing in crafting <strong>high-performance RESTful APIs</strong>, robust database schemas, and microservice architectures with <strong>Spring Boot, Hibernate, MySQL, and PostgreSQL</strong>.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary glow-button">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="devika_java_2026.pdf" target="_blank" rel="noopener" class="btn btn-secondary glow-button" title="View Devika's Official Resume">
+              <i class="fa-solid fa-file-pdf text-accent"></i>
+              <span>View Resume</span>
+            </a>
+            <button class="btn btn-secondary" id="hero-demo-trigger">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Interactive CLI</span>
+            </button>
+            <a href="mailto:devikadhanyakumarmane@gmail.com" class="btn btn-ghost">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Ticker -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-val">B.E.</span>
+              <span class="metric-lbl">Computer Science ('25)</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">3+</span>
+              <span class="metric-lbl">Production Projects</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">7.4</span>
+              <span class="metric-lbl">Engineering CGPA</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl">Clean Architecture</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Interactive Visual / Live Server Card (Positioned Down Below Hero Intro) -->
+        <div class="hero-card-wrapper">
+          <div class="hero-interactive-card">
+            <div class="card-header-bar">
+              <div class="traffic-lights">
+                <span class="light red"></span>
+                <span class="light yellow"></span>
+                <span class="light green"></span>
+              </div>
+              <div class="card-tab-title">
+                <i class="fa-solid fa-server"></i> SpringBootApplication.java · Live Microservice
+              </div>
+              <div class="card-status-badge">
+                <span class="pulse-green"></span> 200 OK
+              </div>
+            </div>
+
+            <div class="card-grid-body">
+              <div class="card-code-body">
+                <div class="code-line"><span class="c-anno">@RestController</span></div>
+                <div class="code-line"><span class="c-anno">@RequestMapping</span>(<span class="c-str">"/api/v1/devika"</span>)</div>
+                <div class="code-line"><span class="c-kw">public class</span> <span class="c-cls">DeveloperController</span> {</div>
+                <div class="code-line indent-1"><span class="c-anno">@GetMapping</span>(<span class="c-str">"/skills"</span>)</div>
+                <div class="code-line indent-1"><span class="c-kw">public</span> <span class="c-cls">ResponseEntity</span>&lt;<span class="c-cls">StackResponse</span>&gt; <span class="c-fn">getStack</span>() {</div>
+                <div class="code-line indent-2"><span class="c-kw">return</span> <span class="c-cls">ResponseEntity</span>.<span class="c-fn">ok</span>(<span class="c-kw">new</span> <span class="c-cls">StackResponse</span>(</div>
+                <div class="code-line indent-3"><span class="c-str">"Spring Boot 3.x"</span>, <span class="c-str">"Java 21"</span>, <span class="c-str">"Hibernate ORM"</span>, <span class="c-str">"PostgreSQL / MySQL"</span></div>
+                <div class="code-line indent-2">));</div>
+                <div class="code-line indent-1">}</div>
+                <div class="code-line">}</div>
+              </div>
+
+              <div class="live-api-tester">
+                <div class="tester-input-row">
+                  <span class="http-badge get">GET</span>
+                  <input type="text" value="/api/v1/devika/skills" readonly id="hero-endpoint-input">
+                  <button class="btn-send-req" id="hero-send-req">
+                    <i class="fa-solid fa-play"></i> Send
+                  </button>
+                </div>
+                <div class="tester-response" id="hero-response-box">
+                  <div class="res-meta">
+                    <span>Status: <strong class="text-green">200 OK</strong></span>
+                    <span>Latency: <strong>14ms</strong></span>
+                  </div>
+                  <pre class="res-json"><code>{
+  "developer": "Devika Mane",
+  "role": "Java Backend Engineer",
+  "status": "Ready for Interviews & Deployment",
+  "core_stack": ["Java", "Spring Boot", "REST APIs", "Hibernate", "SQL", "Docker"]
+}</code></pre>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BENTO GRID SECTION (Ultra-Modern Bento Layout) -->
+    <section id="bento" class="section bento-section">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-cubes"></i> Interactive Architecture</div>
+        <h2 class="section-title">The Developer <span class="gradient-text">Bento Grid</span></h2>
+        <p class="section-desc">Explore live modules, interactive API simulations, terminal commands, and system capabilities.</p>
+      </div>
+
+      <div class="bento-grid">
+
+        <!-- Bento 1: About Devika & CS Core (Wide) -->
+        <div class="bento-card bento-wide" id="bento-about">
+          <div class="bento-inner">
+            <div class="bento-tag"><i class="fa-solid fa-user-astronaut"></i> Background & Philosophy</div>
+            <h3 class="bento-heading">Engineering with precision, clarity, and reliability.</h3>
+            <p class="bento-text">
+              Graduated with a <strong>B.E. in Computer Science</strong> (SVPM's COE Baramati, Pune). I specialize in designing scalable relational database schemas, handling complex business logic with Hibernate & JDBC, and exposing production-grade REST APIs.
+            </p>
+            <div class="bento-highlights">
+              <div class="highlight-chip">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <strong>B.E. Computer Science</strong>
+                  <span>SVPM COE Baramati (2021–2025)</span>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                  <strong>Advansphere ML Intern</strong>
+                  <span>Data Preprocessing & Validation</span>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>Java Full-Stack Certified</strong>
+                  <span>VibrantMinds Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 2: Interactive Terminal CLI -->
+        <div class="bento-card bento-terminal" id="bento-cli">
+          <div class="terminal-bar">
+            <div class="traffic-lights">
+              <span class="light red"></span>
+              <span class="light yellow"></span>
+              <span class="light green"></span>
+            </div>
+            <span class="terminal-title">devika@backend-vm:~ (zsh)</span>
+            <button class="terminal-clear" id="term-clear-btn" title="Clear console"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+          <div class="terminal-screen" id="terminal-screen">
+            <div class="term-line output">Welcome to Devika Mane's Interactive Terminal v2.4</div>
+            <div class="term-line output">Type <span class="term-hl">help</span> to view available commands.</div>
+            <div class="term-line output text-dim">Try: <span class="term-cmd-quick" data-cmd="skills">skills</span>, <span class="term-cmd-quick" data-cmd="projects">projects</span>, <span class="term-cmd-quick" data-cmd="hire">hire</span>, <span class="term-cmd-quick" data-cmd="contact">contact</span></div>
+            <div id="term-history"></div>
+            <div class="term-input-line">
+              <span class="term-prompt">devika@portfolio:~$</span>
+              <input type="text" id="term-input" autocomplete="off" spellcheck="false" placeholder="Type a command...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 3: Tech Stack Radar & Live Filter -->
+        <div class="bento-card bento-stack" id="bento-skills">
+          <div class="bento-tag"><i class="fa-solid fa-layer-group"></i> Core Tech Stack</div>
+          <h3 class="bento-heading">Mastered Technologies</h3>
+          
+          <div class="stack-orbital-pills">
+            <div class="tech-badge featured"><i class="fa-brands fa-java"></i> Java 17/21</div>
+            <div class="tech-badge featured"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+            <div class="tech-badge"><i class="fa-solid fa-database"></i> Hibernate ORM</div>
+            <div class="tech-badge"><i class="fa-solid fa-server"></i> RESTful APIs</div>
+            <div class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="tech-badge"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+            <div class="tech-badge"><i class="fa-brands fa-docker"></i> Docker</div>
+            <div class="tech-badge"><i class="fa-brands fa-linux"></i> Linux</div>
+            <div class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+            <div class="tech-badge"><i class="fa-solid fa-gears"></i> JDBC & SQL</div>
+          </div>
+
+          <div class="stack-progress-list">
+            <div class="prog-item">
+              <div class="prog-info">
+                <span>Java & Spring Boot</span>
+                <span>92%</span>
+              </div>
+              <div class="prog-bar"><div class="prog-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-info">
+                <span>SQL & Database Schema Design</span>
+                <span>88%</span>
+              </div>
+              <div class="prog-bar"><div class="prog-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-info">
+                <span>REST API Architecture & Security</span>
+                <span>90%</span>
+              </div>
+              <div class="prog-bar"><div class="prog-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 4: Live REST API Sandbox -->
+        <div class="bento-card bento-api-sandbox" id="bento-sandbox">
+          <div class="bento-tag"><i class="fa-solid fa-network-wired"></i> Live Mock API Sandbox</div>
+          <h3 class="bento-heading">Simulate Live Backend Calls</h3>
+          <p class="bento-text-sm">Select an endpoint below to test Devika's simulated microservice endpoints.</p>
+
+          <div class="api-endpoints-selector">
+            <button class="api-btn active" data-ep="banking"><span class="badge post">POST</span> /api/v1/bank/transfer</button>
+            <button class="api-btn" data-ep="exam"><span class="badge get">GET</span> /api/v1/exams/schedule</button>
+            <button class="api-btn" data-ep="employee"><span class="badge get">GET</span> /api/v1/employees/search</button>
+          </div>
+
+          <div class="api-live-output" id="api-sandbox-output">
+            <div class="res-bar">
+              <span class="status-200"><i class="fa-solid fa-circle-check"></i> Status: 200 OK</span>
+              <span class="timing"><i class="fa-regular fa-clock"></i> 18ms</span>
+            </div>
+            <pre class="json-code" id="sandbox-json-display"></pre>
+          </div>
+        </div>
+
+        <!-- Bento 5: Architecture / Stats Widget -->
+        <div class="bento-card bento-stats">
+          <div class="bento-tag"><i class="fa-solid fa-chart-line"></i> Backend Reliability</div>
+          <div class="stats-counter-grid">
+            <div class="stat-box">
+              <span class="stat-number" data-target="99.9">99.9%</span>
+              <span class="stat-label">API Uptime Architecture</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number" data-target="100">100%</span>
+              <span class="stat-label">ACID Compliant DB Design</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number" data-target="15">15+</span>
+              <span class="stat-label">Endpoints Implemented</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number" data-target="0">0</span>
+              <span class="stat-label">Uncaught Exceptions</span>
+            </div>
+          </div>
+          <div class="system-status-indicator">
+            <span class="pulse-dot"></span>
+            <span>All Microservices Operating Normally</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-code-branch"></i> Engineering Showcase</div>
+        <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Production-grade applications built with modern Java frameworks, clean patterns, and database optimizations.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Banking Application -->
+        <div class="project-card" id="project-banking" data-project="banking">
+          <div class="project-card-glass">
+            <div class="project-card-header">
+              <div class="proj-id">#01</div>
+              <div class="proj-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="proj-category">Spring Boot Microservice</div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Banking & Transaction Application</h3>
+              <p class="project-desc">
+                High-security backend system providing full transaction management, account creation, real-time fund transfers, balance reconciliation, and audit logs.
+              </p>
+              
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> RESTful APIs with transaction isolation</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Hibernate ORM entity relationships & JPA</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Custom Exception Handling & Validation</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Postman</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline-glow open-project-modal" data-target="banking-modal">
+                <i class="fa-solid fa-circle-play"></i> Live Simulator
+              </button>
+              <a href="https://github.com/developer852" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Exam Management System -->
+        <div class="project-card" id="project-exam" data-project="exam">
+          <div class="project-card-glass">
+            <div class="project-card-header">
+              <div class="proj-id">#02</div>
+              <div class="proj-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <div class="proj-category">Java & JDBC System</div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Exam Management System</h3>
+              <p class="project-desc">
+                Comprehensive platform for managing student records, automated exam schedules, subject mappings, and instant result processing with high query efficiency.
+              </p>
+              
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> CRUD operations using optimized JDBC drivers</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Multi-table normalized schema in MySQL</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Intuitive frontend with admin controls</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Java Core</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML/CSS/JS</span>
+                <span class="tech-tag">MVC Architecture</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline-glow open-project-modal" data-target="exam-modal">
+                <i class="fa-solid fa-circle-play"></i> Live Simulator
+              </button>
+              <a href="https://github.com/developer852" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Employee Management System -->
+        <div class="project-card" id="project-employee" data-project="employee">
+          <div class="project-card-glass">
+            <div class="project-card-header">
+              <div class="proj-id">#03</div>
+              <div class="proj-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div class="proj-category">PostgreSQL & Hibernate</div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Employee Management System</h3>
+              <p class="project-desc">
+                Enterprise resource backend for managing departmental structures, employee records, role-based access data, and automated query handling.
+              </p>
+              
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Object-Relational Mapping with Hibernate</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> PostgreSQL database with index optimizations</div>
+                <div class="feat-item"><i class="fa-solid fa-check text-accent"></i> Dynamic search, filter & pagination engine</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">DAO Pattern</span>
+                <span class="tech-tag">Gradle</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline-glow open-project-modal" data-target="employee-modal">
+                <i class="fa-solid fa-circle-play"></i> Live Simulator
+              </button>
+              <a href="https://github.com/developer852" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-terminal"></i> Technical Competencies</div>
+        <h2 class="section-title">Skills & <span class="gradient-text">Tooling</span></h2>
+        <p class="section-desc">A deep dive into my languages, frameworks, database systems, and developer tools.</p>
+      </div>
+
+      <div class="skills-category-tabs">
+        <button class="skill-tab-btn active" data-cat="all">All Tech</button>
+        <button class="skill-tab-btn" data-cat="backend">Backend & Java</button>
+        <button class="skill-tab-btn" data-cat="database">Databases & ORM</button>
+        <button class="skill-tab-btn" data-cat="tools">DevOps & Tools</button>
+        <button class="skill-tab-btn" data-cat="web">Web & Frontend</button>
+      </div>
+
+      <div class="skills-matrix-grid">
+        
+        <!-- Java -->
+        <div class="skill-item-card" data-cat="backend">
+          <div class="sk-icon java-color"><i class="fa-brands fa-java"></i></div>
+          <div class="sk-details">
+            <h4>Java 17 / 21</h4>
+            <span class="sk-sub">OOP, Streams, Collections, Multithreading</span>
+          </div>
+          <div class="sk-level-badge">Advanced</div>
+        </div>
+
+        <!-- Spring Boot -->
+        <div class="skill-item-card" data-cat="backend">
+          <div class="sk-icon spring-color"><i class="fa-solid fa-leaf"></i></div>
+          <div class="sk-details">
+            <h4>Spring Boot</h4>
+            <span class="sk-sub">Spring Data JPA, REST APIs, Security, MVC</span>
+          </div>
+          <div class="sk-level-badge">Advanced</div>
+        </div>
+
+        <!-- Hibernate -->
+        <div class="skill-item-card" data-cat="database">
+          <div class="sk-icon hibernate-color"><i class="fa-solid fa-database"></i></div>
+          <div class="sk-details">
+            <h4>Hibernate ORM</h4>
+            <span class="sk-sub">Entity Mapping, HQL, Caching, Session Factory</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="skill-item-card" data-cat="database">
+          <div class="sk-icon mysql-color"><i class="fa-solid fa-server"></i></div>
+          <div class="sk-details">
+            <h4>MySQL</h4>
+            <span class="sk-sub">Schema Design, Indexing, Transactions, Joins</span>
+          </div>
+          <div class="sk-level-badge">Advanced</div>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="skill-item-card" data-cat="database">
+          <div class="sk-icon pg-color"><i class="fa-solid fa-database"></i></div>
+          <div class="sk-details">
+            <h4>PostgreSQL</h4>
+            <span class="sk-sub">Relational Modeling, Query Tuning, Views</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+        <!-- REST APIs -->
+        <div class="skill-item-card" data-cat="backend">
+          <div class="sk-icon api-color"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="sk-details">
+            <h4>RESTful Web Services</h4>
+            <span class="sk-sub">HTTP Spec, JSON Serialization, DTOs, CRUD</span>
+          </div>
+          <div class="sk-level-badge">Expert</div>
+        </div>
+
+        <!-- Docker -->
+        <div class="skill-item-card" data-cat="tools">
+          <div class="sk-icon docker-color"><i class="fa-brands fa-docker"></i></div>
+          <div class="sk-details">
+            <h4>Docker</h4>
+            <span class="sk-sub">Containerization, Dockerfile, App Deployment</span>
+          </div>
+          <div class="sk-level-badge">Intermediate</div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="skill-item-card" data-cat="tools">
+          <div class="sk-icon git-color"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="sk-details">
+            <h4>Git & GitHub</h4>
+            <span class="sk-sub">Version Control, Branching, Pull Requests, CI</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+        <!-- Linux / Bash -->
+        <div class="skill-item-card" data-cat="tools">
+          <div class="sk-icon linux-color"><i class="fa-brands fa-linux"></i></div>
+          <div class="sk-details">
+            <h4>Linux & Shell</h4>
+            <span class="sk-sub">Command Line, Process Management, Environment</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+        <!-- HTML / CSS / JS -->
+        <div class="skill-item-card" data-cat="web">
+          <div class="sk-icon web-color"><i class="fa-brands fa-html5"></i></div>
+          <div class="sk-details">
+            <h4>HTML5 / CSS3 / JavaScript</h4>
+            <span class="sk-sub">Responsive UI, DOM, Fetch API, Async/Await</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+        <!-- JDBC -->
+        <div class="skill-item-card" data-cat="database">
+          <div class="sk-icon jdbc-color"><i class="fa-solid fa-plug"></i></div>
+          <div class="sk-details">
+            <h4>JDBC</h4>
+            <span class="sk-sub">PreparedStatements, Connection Pooling, ResultSets</span>
+          </div>
+          <div class="sk-level-badge">Advanced</div>
+        </div>
+
+        <!-- Gradle & Build Tools -->
+        <div class="skill-item-card" data-cat="tools">
+          <div class="sk-icon gradle-color"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div class="sk-details">
+            <h4>Gradle & Maven</h4>
+            <span class="sk-sub">Dependency Management, Build Pipelines, JARs</span>
+          </div>
+          <div class="sk-level-badge">Proficient</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section timeline-section">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-timeline"></i> Career Journey</div>
+        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+        <p class="section-desc">Proven experience in software engineering, internships, academic foundation, and technical certifications.</p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Experience 1: Advansphere Intern -->
+        <div class="timeline-card">
+          <div class="timeline-badge-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Nov 2024 — Jan 2025</div>
+            <h3 class="timeline-title">Machine Learning Intern</h3>
+            <div class="timeline-company"><i class="fa-solid fa-building"></i> Advansphere · Remote</div>
+            <ul class="timeline-bullets">
+              <li>Processed and cleaned large structured datasets across diverse sources using automated validation scripts.</li>
+              <li>Collaborated with team members to debug data handling pipelines and increase processing throughput.</li>
+              <li>Documented preprocessing workflows ensuring reproducible, robust dataset ingestion and data hygiene.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Data Validation</span>
+              <span>Python</span>
+              <span>ETL Pipelines</span>
+              <span>Quality Assurance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 1: B.E. Computer Science -->
+        <div class="timeline-card">
+          <div class="timeline-badge-icon edu"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-date"><i class="fa-regular fa-calendar"></i> 2021 — 2025</div>
+            <h3 class="timeline-title">Bachelor of Engineering — Computer Science</h3>
+            <div class="timeline-company"><i class="fa-solid fa-university"></i> SVPM's College of Engineering, Baramati, Pune</div>
+            <p class="timeline-desc">
+              Graduated with a <strong>CGPA of 7.4 / 10</strong>. Coursework covered Data Structures & Algorithms, Object-Oriented Programming in Java, Database Management Systems (DBMS), Operating Systems, and Distributed Computing.
+            </p>
+            <div class="timeline-tags">
+              <span>Computer Science</span>
+              <span>DBMS & SQL</span>
+              <span>Core Java</span>
+              <span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 1: Java Full Stack -->
+        <div class="timeline-card">
+          <div class="timeline-badge-icon cert"><i class="fa-solid fa-certificate"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Certified</div>
+            <h3 class="timeline-title">Java Full-Stack Development Certification</h3>
+            <div class="timeline-company"><i class="fa-solid fa-award"></i> VibrantMinds Technologies Pvt. Ltd.</div>
+            <p class="timeline-desc">
+              Intensive training program covering enterprise Java development, Spring Boot microservices, Hibernate ORM mappings, relational database design, and end-to-end web deployment.
+            </p>
+            <div class="timeline-tags">
+              <span>Spring Boot</span>
+              <span>Hibernate</span>
+              <span>MySQL</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="timeline-actions" style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="Java_Certificate.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline-glow">
+                <i class="fa-solid fa-certificate"></i> View Certificate (PDF)
+              </a>
+              <a href="Java_Certificate.pdf" download="Devika_Mane_Java_Certificate.pdf" class="btn btn-sm btn-ghost">
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-card-container">
+        <div class="contact-header">
+          <div class="status-pill inline">
+            <span class="status-dot"></span> Available for Backend Roles
+          </div>
+          <h2 class="contact-headline">Let's build something <span class="gradient-text">exceptional</span>.</h2>
+          <p class="contact-subtext">
+            Whether you have an open Java Backend role, a freelance project, or just want to connect — my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-channels-grid">
+          
+          <a href="devika_java_2026.pdf" target="_blank" rel="noopener" class="contact-channel-box link-box" title="View Devika's Resume">
+            <div class="ch-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="ch-info">
+              <span class="ch-lbl">Official Resume</span>
+              <span class="ch-val">devika_java_2026.pdf</span>
+            </div>
+            <div class="ch-action-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+
+          <div class="contact-channel-box" id="copy-email-box">
+            <div class="ch-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="ch-info">
+              <span class="ch-lbl">Email Address</span>
+              <span class="ch-val">devikadhanyakumarmane@gmail.com</span>
+            </div>
+            <button class="ch-action-btn" id="copy-email-btn" title="Copy email">
+              <i class="fa-regular fa-copy"></i>
+              <span class="btn-text">Copy</span>
+            </button>
+          </div>
+
+          <a href="https://linkedin.com/in/devikamane" target="_blank" rel="noopener" class="contact-channel-box link-box">
+            <div class="ch-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="ch-info">
+              <span class="ch-lbl">LinkedIn Profile</span>
+              <span class="ch-val">linkedin.com/in/devikamane</span>
+            </div>
+            <div class="ch-action-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+
+          <a href="https://github.com/developer852" target="_blank" rel="noopener" class="contact-channel-box link-box">
+            <div class="ch-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="ch-info">
+              <span class="ch-lbl">GitHub Repositories</span>
+              <span class="ch-val">github.com/developer852</span>
+            </div>
+            <div class="ch-action-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+
+          <div class="contact-channel-box">
+            <div class="ch-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="ch-info">
+              <span class="ch-lbl">Current Location</span>
+              <span class="ch-val">Pune, Maharashtra, India</span>
+            </div>
+            <span class="ch-badge">Open to Relocate / Remote</span>
+          </div>
+
+        </div>
+
+        <!-- Quick Interactive Message Simulator -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form">
+            <div class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Quick Message</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" placeholder="john@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">Message / Job Description</label>
+              <textarea id="contact-msg" rows="4" placeholder="Hi Devika, we'd love to discuss a Java Backend role with you..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-feedback" class="form-feedback-msg"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOATING MAC-STYLE DOCK (Viral Reel Feature) -->
+  <div class="floating-dock" id="floating-dock">
+    <div class="dock-inner">
+      <a href="#hero" class="dock-item" title="Home" data-tooltip="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#bento" class="dock-item" title="Bento Overview" data-tooltip="Overview">
+        <i class="fa-solid fa-shapes"></i>
+      </a>
+      <a href="#projects" class="dock-item" title="Projects" data-tooltip="Projects">
+        <i class="fa-solid fa-folder-tree"></i>
+      </a>
+      <a href="#skills" class="dock-item" title="Tech Stack" data-tooltip="Skills">
+        <i class="fa-solid fa-layer-group"></i>
+      </a>
+      <a href="#experience" class="dock-item" title="Experience" data-tooltip="Experience">
+        <i class="fa-solid fa-briefcase"></i>
+      </a>
+      <button class="dock-item dock-ai-highlight" id="dock-ai-btn" title="Ask Devika AI Copilot" data-tooltip="Devika AI ⚡">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </button>
+      <div class="dock-separator"></div>
+      <button class="dock-item" id="dock-term-btn" title="Open Terminal" data-tooltip="CLI Terminal">
+        <i class="fa-solid fa-terminal"></i>
+      </button>
+      <button class="dock-item" id="dock-theme-btn" title="Switch Color Theme" data-tooltip="Theme Accent">
+        <i class="fa-solid fa-palette"></i>
+      </button>
+      <button class="dock-item" id="dock-sound-btn" title="Toggle UI Sound SFX" data-tooltip="Sound FX: ON">
+        <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+      </button>
+      <div class="dock-separator"></div>
+      <a href="#contact" class="dock-item dock-hire-btn" title="Hire Me" data-tooltip="Contact Devika">
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- FLOATING DEVIKA AI COPILOT TRIGGER -->
+  <button class="floating-ai-trigger" id="floating-ai-trigger" title="Ask Devika AI Copilot (Interactive Assistant)">
+    <div class="ai-trigger-icon-wrap">
+      <i class="fa-solid fa-wand-magic-sparkles ai-sparkle"></i>
+      <div class="ai-pulse-ring"></div>
+    </div>
+    <div class="ai-trigger-label">
+      <span class="ai-title">Ask Devika AI</span>
+      <span class="ai-status-indicator"><span class="ai-live-dot"></span> Java Copilot</span>
+    </div>
+  </button>
+
+  <!-- DEVIKA AI COPILOT MODAL / CHAT DRAWER -->
+  <div class="ai-chat-drawer-overlay" id="ai-modal-overlay">
+    <div class="ai-chat-drawer" id="ai-chat-drawer">
+      
+      <!-- Drawer Header -->
+      <div class="ai-drawer-header">
+        <div class="ai-header-profile">
+          <div class="ai-avatar" id="ai-avatar-orb">
+            <i class="fa-solid fa-robot"></i>
+            <span class="ai-online-badge"></span>
+          </div>
+          <div class="ai-header-titles">
+            <div class="ai-name-row">
+              <h4>Devika AI Assistant</h4>
+              <span class="ai-version-tag">v2.6 &bull; Voice Enabled</span>
+            </div>
+            <div class="ai-sub-status">
+              <i class="fa-solid fa-bolt text-accent"></i>
+              <span id="ai-status-text">Online &bull; Ready</span>
+              <div class="ai-speaking-equalizer" id="ai-speaking-equalizer">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-header-actions">
+          <button class="ai-hdr-btn ai-voice-toggle-btn active" id="ai-voice-toggle-btn" title="Voice Speech (ON/OFF)">
+            <i class="fa-solid fa-volume-high" id="ai-voice-icon"></i>
+          </button>
+          <button class="ai-hdr-btn" id="ai-clear-chat-btn" title="Clear Conversation History">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+          <button class="ai-hdr-btn" id="ai-close-drawer-btn" title="Close AI Assistant (ESC)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Suggested Quick Prompt Chips -->
+      <div class="ai-chips-container">
+        <span class="chips-label"><i class="fa-solid fa-bolt"></i> Quick Queries:</span>
+        <div class="ai-chips-scroll">
+          <button class="ai-chip" data-query="Tell me about Devika Mane and her core backend focus.">💡 Who is Devika?</button>
+          <button class="ai-chip" data-query="What are her top production-ready Java & Spring Boot projects?">💼 Top Projects</button>
+          <button class="ai-chip" data-query="Explain her Spring Boot & MySQL Banking Application architecture.">🏦 Banking App</button>
+          <button class="ai-chip" data-query="What is Devika's complete tech stack and database experience?">⚡ Tech Stack</button>
+          <button class="ai-chip" data-query="What is her educational background and CGPA?">🎓 Education</button>
+          <button class="ai-chip" data-query="Tell me about her Machine Learning Internship at Advansphere.">💼 Experience</button>
+          <button class="ai-chip" data-query="How can I contact or hire Devika for Java Backend roles?">📬 Hire Devika</button>
+        </div>
+      </div>
+
+      <!-- Chat Messages Scroll Area -->
+      <div class="ai-chat-messages" id="ai-chat-messages">
+        <div class="ai-msg ai-msg-bot">
+          <div class="ai-msg-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="ai-msg-content">
+            <p>Hello! I'm <strong>Devika AI</strong>, an interactive verbal and textual assistant trained on Devika Mane's software engineering background, Spring Boot projects, technical skills, and experience.</p>
+            <p>You can <strong>speak into your microphone</strong>, type questions below, or tap quick query chips &mdash; I will speak and respond in real-time!</p>
+            <div class="ai-msg-speak-bar">
+              <button class="ai-msg-speak-btn" data-text="Hello! I am Devika AI, an interactive verbal and textual assistant trained on Devika Mane's software engineering background, Spring Boot projects, technical skills, and experience. You can speak into your microphone or type questions below."><i class="fa-solid fa-volume-high"></i> Listen to Intro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voice Listening Active Indicator -->
+      <div class="ai-listening-banner" id="ai-listening-banner">
+        <div class="ai-listening-waves">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span>Listening to your voice... Speak your question now!</span>
+        <button type="button" class="ai-stop-mic-btn" id="ai-stop-mic-btn"><i class="fa-solid fa-circle-stop"></i> Stop</button>
+      </div>
+
+      <!-- Chat Input Area with Mic Button -->
+      <form class="ai-chat-input-form" id="ai-chat-form">
+        <div class="ai-input-wrap">
+          <input type="text" id="ai-user-input" placeholder="Ask or speak anything about Devika's skills, projects..." autocomplete="off" />
+          <button type="button" class="ai-mic-btn" id="ai-mic-btn" title="Speak question with Microphone">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button type="submit" id="ai-send-btn" title="Send message">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="ai-input-footer">
+          <span><i class="fa-solid fa-volume-high text-accent"></i> Verbal voice speech &bull; Instant JVM response &bull; Click mic to speak</span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE MODAL (⌘K) -->
+  <div class="cmd-palette-overlay" id="cmd-overlay">
+    <div class="cmd-palette-modal">
+      <div class="cmd-search-header">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="cmd-search-input" placeholder="Type a command or search sections..." autofocus>
+        <span class="esc-badge">ESC</span>
+      </div>
+      <div class="cmd-results-list" id="cmd-results">
+        <div class="cmd-group-label">AI & Intelligence</div>
+        <div class="cmd-result-item" data-action="open-ai">
+          <i class="fa-solid fa-wand-magic-sparkles text-accent"></i> <span>Ask Devika AI Assistant (Interactive Copilot)</span>
+          <span class="cmd-hint">AI Bot</span>
+        </div>
+
+        <div class="cmd-group-label">Navigation</div>
+        <div class="cmd-result-item" data-action="goto" data-target="#hero">
+          <i class="fa-solid fa-house"></i> <span>Jump to Home</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+        <div class="cmd-result-item" data-action="goto" data-target="#bento">
+          <i class="fa-solid fa-shapes"></i> <span>Jump to Bento Grid & Overview</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+        <div class="cmd-result-item" data-action="goto" data-target="#projects">
+          <i class="fa-solid fa-folder-tree"></i> <span>Jump to Projects</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+        <div class="cmd-result-item" data-action="goto" data-target="#skills">
+          <i class="fa-solid fa-layer-group"></i> <span>Jump to Tech Stack</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+        <div class="cmd-result-item" data-action="goto" data-target="#experience">
+          <i class="fa-solid fa-briefcase"></i> <span>Jump to Experience</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+        <div class="cmd-result-item" data-action="goto" data-target="#contact">
+          <i class="fa-solid fa-envelope"></i> <span>Jump to Contact</span>
+          <span class="cmd-hint">Section</span>
+        </div>
+
+        <div class="cmd-group-label">Documents & Credentials</div>
+        <div class="cmd-result-item" data-action="open-pdf" data-target="devika_java_2026.pdf">
+          <i class="fa-solid fa-file-pdf text-accent"></i> <span>View Official Resume (devika_java_2026.pdf)</span>
+          <span class="cmd-hint">PDF</span>
+        </div>
+        <div class="cmd-result-item" data-action="open-pdf" data-target="Java_Certificate.pdf">
+          <i class="fa-solid fa-certificate text-accent"></i> <span>View Java Full-Stack Certificate (Java_Certificate.pdf)</span>
+          <span class="cmd-hint">PDF</span>
+        </div>
+
+        <div class="cmd-group-label">Quick Actions</div>
+        <div class="cmd-result-item" data-action="copy-email">
+          <i class="fa-solid fa-copy"></i> <span>Copy Email Address</span>
+          <span class="cmd-hint">Action</span>
+        </div>
+        <div class="cmd-result-item" data-action="open-github">
+          <i class="fa-brands fa-github"></i> <span>Open GitHub Profile (developer852)</span>
+          <span class="cmd-hint">External</span>
+        </div>
+        <div class="cmd-result-item" data-action="open-linkedin">
+          <i class="fa-brands fa-linkedin"></i> <span>Open LinkedIn Profile</span>
+          <span class="cmd-hint">External</span>
+        </div>
+        <div class="cmd-result-item" data-action="toggle-theme">
+          <i class="fa-solid fa-palette"></i> <span>Cycle Accent Theme Color</span>
+          <span class="cmd-hint">Customizer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT INTERACTIVE SIMULATOR MODALS -->
+  
+  <!-- 1. Banking Modal -->
+  <div class="project-modal-overlay" id="banking-modal">
+    <div class="project-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-building-columns text-accent"></i>
+          <h3>Banking & Transaction System · Live Simulator</h3>
+        </div>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="sim-intro">
+          <p>Test real-time simulated bank account transactions powered by Spring Boot REST controllers and MySQL ACID compliance logic.</p>
+        </div>
+        <div class="sim-interactive-box">
+          <div class="sim-accounts-row">
+            <div class="account-card" id="acc-from">
+              <span class="acc-badge">Account A (Sender)</span>
+              <h4>ACC-883921</h4>
+              <div class="acc-balance">Balance: ₹<span id="bal-from">45,000</span></div>
+            </div>
+            <div class="acc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="account-card" id="acc-to">
+              <span class="acc-badge">Account B (Receiver)</span>
+              <h4>ACC-110482</h4>
+              <div class="acc-balance">Balance: ₹<span id="bal-to">12,500</span></div>
+            </div>
+          </div>
+
+          <div class="sim-transfer-form">
+            <div class="sim-input-group">
+              <label>Transfer Amount (₹):</label>
+              <input type="number" id="transfer-amt" value="5000" min="100" max="45000">
+            </div>
+            <button class="btn btn-primary" id="btn-exec-transfer">
+              <i class="fa-solid fa-bolt"></i> Execute POST /api/v1/transfer
+            </button>
+          </div>
+
+          <div class="sim-console-output">
+            <div class="sim-log-header">Backend Execution Log</div>
+            <pre class="sim-log-content" id="banking-log"><code>[INFO] Connection Pool initialized: HikariCP [MySQL @ port 3306]
+[INFO] Hibernate Session opened. Isolation Level: TRANSACTION_READ_COMMITTED
+[INFO] Ready for transaction requests...</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Exam Modal -->
+  <div class="project-modal-overlay" id="exam-modal">
+    <div class="project-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-signature text-accent"></i>
+          <h3>Exam Management System · Interactive Tester</h3>
+        </div>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="sim-intro">
+          <p>Query student records and compute GPA instantly with simulated JDBC PreparedStatement queries.</p>
+        </div>
+        <div class="sim-interactive-box">
+          <div class="sim-student-table-wrap">
+            <table class="sim-table">
+              <thead>
+                <tr>
+                  <th>Roll No</th>
+                  <th>Student Name</th>
+                  <th>Subject</th>
+                  <th>Score</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody id="exam-table-body">
+                <tr>
+                  <td>#101</td>
+                  <td>Devika Mane</td>
+                  <td>Database Management</td>
+                  <td>94/100</td>
+                  <td><span class="grade-a">A+</span></td>
+                </tr>
+                <tr>
+                  <td>#102</td>
+                  <td>Rahul Sharma</td>
+                  <td>Java Programming</td>
+                  <td>88/100</td>
+                  <td><span class="grade-a">A</span></td>
+                </tr>
+                <tr>
+                  <td>#103</td>
+                  <td>Sneha Patil</td>
+                  <td>Data Structures</td>
+                  <td>91/100</td>
+                  <td><span class="grade-a">A+</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sim-form-row">
+            <input type="text" id="new-std-name" placeholder="Student Name (e.g. Amit K)">
+            <input type="number" id="new-std-score" placeholder="Score (0-100)" min="0" max="100">
+            <button class="btn btn-primary btn-sm" id="btn-add-student">
+              <i class="fa-solid fa-plus"></i> Add via JDBC
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Employee Modal -->
+  <div class="project-modal-overlay" id="employee-modal">
+    <div class="project-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-users-gear text-accent"></i>
+          <h3>Employee Management · PostgreSQL ORM Explorer</h3>
+        </div>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="sim-intro">
+          <p>Explore dynamic Hibernate entity mapping relationships (`@OneToMany`, `@ManyToOne`) across Departments and Employees.</p>
+        </div>
+        <div class="sim-interactive-box">
+          <div class="dept-selector-row">
+            <button class="dept-btn active" data-dept="engineering"><i class="fa-solid fa-code"></i> Engineering (4)</button>
+            <button class="dept-btn" data-dept="qa"><i class="fa-solid fa-bug-slash"></i> QA & Testing (2)</button>
+            <button class="dept-btn" data-dept="data"><i class="fa-solid fa-chart-pie"></i> Data & ML (3)</button>
+          </div>
+          <div class="dept-members-display" id="dept-members-box">
+            <!-- Dynamic members injected via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">devika<span class="accent-dot">.java</span></div>
+        <p>Built with modern web technologies, inspired by cutting-edge tech aesthetics.</p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-status">
+          <span class="pulse-green"></span>
+          <span>Backend Systems Operational · 2026</span>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="https://github.com/developer852" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/devikamane" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:devikadhanyakumarmane@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="copyright">&copy; 2026 Devika Mane. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js?v=3.1"></script>
+</body>
+</html>
